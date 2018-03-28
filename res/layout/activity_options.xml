@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/show_completed" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupShowCompleted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         >
+
+        <RadioButton
+            android:id="@+id/radioShowCompletedYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Yes"
+            android:onClick="onClickedShowCompleted"
+             />
+
+        <RadioButton
+            android:id="@+id/radioShowCompletedNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/No" 
+            android:onClick="onClickedShowCompleted"
+            />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_tasks" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupEmailTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioEmailTaskYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Yes"
+            android:onClick="onClickedEmailTask" />
+
+        <RadioButton
+            android:id="@+id/radioEmailTaskNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/No"
+            android:onClick="onClickedEmailTask" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/prompt_at_due_date" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPromptDue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioPromptDueYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Yes" 
+            android:onClick="onClickedPromptDue" />
+
+        <RadioButton
+            android:id="@+id/radioPromptDueNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/No"
+            android:onClick="onClickedPromptDue" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonSaveFile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/saveToFile"
+        android:onClick="onClickSaveFile" />
+
+</LinearLayout>
